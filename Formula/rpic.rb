@@ -1,23 +1,23 @@
 class Rpic < Formula
   desc "pic graphics language rendered to SVG/PNG/PDF"
   homepage "https://github.com/milkway/rpic-lang"
-  version "0.0.2"
+  version "0.11.1"
   license "BSD-2-Clause"
 
   on_macos do
     on_arm do
       url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-aarch64-apple-darwin.tar.gz"
-      sha256 "d977b68abac70f1c7fa19be2fd4f4f558008f5dcd6b9c6a716f60dae8d23b90a"
+      sha256 "9be4b327ee7203aa3decb4589a0343dfbb9d01f7b62c01f8760ae4b26a6df86d"
     end
     on_intel do
       url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-x86_64-apple-darwin.tar.gz"
-      sha256 "3fc1a32a38cf2a92ce2dc1e9eb162ca122ee2c3b189d531a8dde65ec7ed826d4"
+      sha256 "8c45eb4792d6f8ae8e9e0bb0747144801c12e90c45b53a6e50f40d16b34317b1"
     end
   end
 
   on_linux do
     url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "7d5d26a831fcbe6cd4eac3310671f4e16a04e3e4233b5f357ccfbcdd33a26161"
+    sha256 "48c11456cd03547365e41de15ddb95989facc3295556d05f568bc68b31013a02"
   end
 
   def install
