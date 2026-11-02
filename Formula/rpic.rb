@@ -1,8 +1,3 @@
-# Homebrew formula for rpic (template).
-#
-# At release time, fill in `version` and the per-target `url`/`sha256` from the
-# GitHub Release assets, then publish to a tap (e.g. milkway/homebrew-rpic):
-#   brew tap milkway/rpic && brew install rpic
 class Rpic < Formula
   desc "pic graphics language rendered to SVG/PNG/PDF"
   homepage "https://github.com/milkway/rpic-lang"
