@@ -1,23 +1,28 @@
+# Homebrew formula for rpic (template).
+#
+# At release time, fill in `version` and the per-target `url`/`sha256` from the
+# GitHub Release assets, then publish to a tap (e.g. milkway/homebrew-rpic):
+#   brew tap milkway/rpic && brew install rpic
 class Rpic < Formula
   desc "pic graphics language rendered to SVG/PNG/PDF"
   homepage "https://github.com/milkway/rpic-lang"
-  version "0.11.3"
+  version "0.12.0"
   license "BSD-2-Clause"
 
   on_macos do
     on_arm do
       url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-aarch64-apple-darwin.tar.gz"
-      sha256 "cffb9a2dbc6803730bef39c7ef8087f2ae46bc0eaf6d18f3498f6448c57eae41"
+      sha256 "8fe6ebbd300e1a2c1f2643dfe9f8348aadfd5151a5dcf965a651c7ede1d27746"
     end
     on_intel do
       url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-x86_64-apple-darwin.tar.gz"
-      sha256 "5724cba31755d700ce44b4bd6704361d8cf088293647795aaa3ccf4a79ea93e6"
+      sha256 "a07a3e70092f4e12321007e23506aba276462f8cf058feacf271fea3d712e466"
     end
   end
 
   on_linux do
     url "https://github.com/milkway/rpic-lang/releases/download/v#{version}/rpic-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "68d90c5213cf96b675a07bc2f9eabd3a980a908615bb2a21c274270c682ec32e"
+    sha256 "43812af694d64283c138b448984136afed18b73546c5d80a703bced1c09b4d3f"
   end
 
   def install
